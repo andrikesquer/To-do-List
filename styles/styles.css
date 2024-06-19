@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #8793a3;
+}
+
+header{
+    height: 60px;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.toDoApp {
+    padding: 20px;
+}
+
+.agregarTareas-container {
+    display: flex;
+    justify-content: center;
+}
+
+input#escribir {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border-color: grey;
+    background-color: lightgrey;
+}
+
+button {
+    padding: 10px 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    border-color: grey;
+    background-color: #e69a0f;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+    font-size: 18px;
+    padding: 15px 10px 15px 50px;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: lightgrey;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-image: url(../utilis/UncheckBox.png);
+    background-size: cover;
+    left: 10px;
+}
+
+ul li.completada{
+    color: #ada9a9;
+}
+
+ul li.completada::before{
+    background-image: url(../utilis/CheckBox.png);
+}
+
+ul li eliminar{
+    position: absolute;
+    right: 0;
+    margin-right: 5px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: grey;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+ul li eliminar:hover{
+    background: lightgray;
+}
