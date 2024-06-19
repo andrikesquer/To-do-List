@@ -3,7 +3,7 @@ let escribir = document.getElementById("escribir");
 let lista = document.getElementById("lista");
 
 function agregar(){
-    if(escribir.value === ''){
+    if(escribir.value == ''){
         alert ("Debes agregar tareas")
     }
     else{
@@ -20,11 +20,11 @@ function agregar(){
 }
 
 lista.addEventListener("click", function(e){
-    if(e.target.tagName === "LI"){
+    if(e.target.tagName == "LI"){
         e.target.classList.toggle("completada");
         guardar();
     }
-    else if(e.target.tagName === "ELIMINAR"){
+    else if(e.target.tagName == "ELIMINAR"){
         e.target.parentElement.remove();
         guardar();
     }

@@ -49,7 +49,7 @@ ul {
 
 ul li{
     list-style: none;
-    font-size: 18px;
+    font-size: 14px;
     padding: 15px 10px 15px 50px;
     cursor: pointer;
     position: relative;
@@ -61,8 +61,8 @@ ul li{
 ul li::before{
     content: '';
     position: absolute;
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     background-image: url(../utilis/UncheckBox.png);
     background-size: cover;
     left: 10px;
