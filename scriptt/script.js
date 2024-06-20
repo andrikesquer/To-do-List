@@ -19,13 +19,13 @@ function agregar(){
     guardar();
 }
 
-lista.addEventListener("click", function(e){
-    if(e.target.tagName == "LI"){
-        e.target.classList.toggle("completada");
+lista.addEventListener("click", function(a){
+    if(a.target.tagName == "LI"){
+        a.target.classList.toggle("completada");
         guardar();
     }
-    else if(e.target.tagName == "ELIMINAR"){
-        e.target.parentElement.remove();
+    else if(a.target.tagName == "ELIMINAR"){
+        a.target.parentElement.remove();
         guardar();
     }
 }, false);
