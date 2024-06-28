@@ -3,7 +3,7 @@ let escribir = document.getElementById("escribir");
 let lista = document.getElementById("lista");
 
 function agregar(){
-    if(escribir.value == ''){
+    if(escribir.value == ''||escribir.value == ' '){
         alert ("Debes agregar tareas")
     }
     else{
